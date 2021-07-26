@@ -1,0 +1,14 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: service-hi
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true     #true表示使用ip地址注册
+    instance-id: service-hi   #指定服务的id(Status的显示名称，可以写成IP，随意)
